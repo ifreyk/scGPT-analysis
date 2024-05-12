@@ -1,0 +1,154 @@
+wandb_version: 1
+
+seed:
+  desc: null
+  value: 0
+dataset_name:
+  desc: null
+  value: ms
+do_train:
+  desc: null
+  value: true
+load_model:
+  desc: null
+  value: scgpt/scGPT_human
+mask_ratio:
+  desc: null
+  value: 0.0
+epochs:
+  desc: null
+  value: 10
+n_bins:
+  desc: null
+  value: 51
+MVC:
+  desc: null
+  value: false
+ecs_thres:
+  desc: null
+  value: 0.0
+dab_weight:
+  desc: null
+  value: 0.0
+lr:
+  desc: null
+  value: 0.0001
+batch_size:
+  desc: null
+  value: 16
+layer_size:
+  desc: null
+  value: 128
+nlayers:
+  desc: null
+  value: 4
+nhead:
+  desc: null
+  value: 4
+dropout:
+  desc: null
+  value: 0.2
+schedule_ratio:
+  desc: null
+  value: 0.9
+save_eval_interval:
+  desc: null
+  value: 5
+fast_transformer:
+  desc: null
+  value: true
+pre_norm:
+  desc: null
+  value: false
+amp:
+  desc: null
+  value: true
+include_zero_gene:
+  desc: null
+  value: false
+freeze:
+  desc: null
+  value: false
+DSBN:
+  desc: null
+  value: false
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.6
+    framework: lightning
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1714945203.0
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 12
+      - 40
+      - 45
+      - 49
+      - 51
+      - 53
+      - 55
+      - 103
+      2:
+      - 1
+      - 5
+      - 9
+      - 12
+      - 40
+      - 45
+      - 49
+      - 51
+      - 53
+      - 55
+      - 103
+      3:
+      - 1
+      - 7
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.16.6
+      8:
+      - 1
+      - 8
+      13: linux-x86_64
+    m:
+    - 1: epoch
+    - 1: valid/mse
+      5: 1
+      6:
+      - 1
+      - 3
+      7:
+      - 1
+    - 1: valid/mre
+      5: 1
+      6:
+      - 1
+      - 3
+      7:
+      - 1
+    - 1: valid/dab
+      5: 1
+      6:
+      - 1
+      - 3
+      7:
+      - 1
+    - 1: valid/sum_mse_dab
+      5: 1
+      6:
+      - 1
+      - 3
+      7:
+      - 1
+    - 1: test/avg_bio
+      6:
+      - 3
+      7:
+      - 2
